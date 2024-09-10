@@ -1,0 +1,459 @@
+@font-face {
+   font-family: cairo-ar;
+   src: url(../fonts/Cairo-Regular.ttf);
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: cairo-ar;
+}
+
+header video {
+   min-height: 100%;
+   min-width: 100%;
+   position: fixed;
+   z-index: -1;
+}
+
+header .overlay {
+   background-color: rgba(255, 255, 255, 0.7);
+}
+
+header .brand {
+   padding-top: 40px;
+}
+
+header .header-text {
+   padding-top: 198px;
+}
+
+header .header-text h1 {
+   font-size: 36px;
+   line-height: 46px;
+   margin-bottom: 40px;
+   color: #555555;
+}
+
+header .header-text p {
+   font-size: 18px;
+   line-height: 32.5px;
+   margin-bottom: 50px;
+   color: #555555;
+}
+
+header .header-btns {
+   margin-bottom: 150px;
+}
+
+header .header-btns .buy {
+   background-color: #7936b2;
+   color: #fff;
+   border-radius: 0;
+   padding: 16px 62px;
+   font-size: 18px;
+   line-height: 32px;
+}
+
+header .header-btns .specs {
+   background-color: transparent;
+   color: #7936b2;
+   padding: 16px 62px;
+   font-size: 18px;
+   line-height: 32px;
+}
+
+header .product {
+   margin-bottom: 30px;
+}
+
+header .product .product-image img {
+   width: 100%;
+}
+
+header .product .product-label img {
+   position: absolute;
+   top: -50px;
+   right: -80px;
+}
+
+header .product .product-label p {
+   position: absolute;
+   top: -25px;
+   right: -27px;
+   font-size: 24px;
+   color: #fff;
+}
+
+header .product .product-label p span {
+   display: block;
+   text-align: center;
+   margin-top: 12px;
+}
+
+section.features {
+   background-color: #fff;
+   padding: 70px 0px;
+}
+
+section.features .features-title h2 {
+   font-size: 36px;
+   line-height: 32px;
+   color: #555555;
+   padding-bottom: 45px;
+   position: relative;
+}
+
+section.features .features-title h2::after {
+   content: "";
+   width: 150px;
+   height: 2px;
+   background-color: #6a3093;
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+section.features .media-features .d-flex {
+   border-bottom: 3px solid #eeeeee;
+   padding: 68px 0;
+}
+
+section.features .media-features .d-flex:nth-child(even) {
+   direction: ltr;
+}
+
+section.features .media-features .d-flex img {
+   margin: 0 100px;
+}
+
+section.features .media-features .d-flex h4 {
+   color: #6a3093;
+   font-size: 36px;
+   padding: 0 25px;
+   margin-bottom: 50px;
+   border-right: 2px solid #6a3093;
+}
+
+section.features .media-features .d-flex p {
+   color: #555555;
+   font-size: 18px;
+   line-height: 32px;
+}
+
+section.features .media-features .d-flex:nth-child(even) h4 {
+   border-left: 2px solid #6a3093;
+   border-right: 0;
+}
+section.features .media-features .d-flex:nth-child(3) {
+   border-bottom: 0;
+}
+section.prices {
+   background-color: #f7f7f7;
+   padding: 60px 0px;
+}
+
+section.prices .prices-text h2 {
+   color: #555555;
+   font-size: 30px;
+}
+
+section.prices .plan-card {
+   background-color: #fff;
+   border: 2px solid #ededed;
+   padding: 15px 0;
+   margin: 70px 0;
+   min-height: 600px;
+   position: relative;
+   transition: all 0.4s;
+}
+
+section.prices .plan-card:hover {
+   transform: scale(1.05);
+}
+
+section.prices .plan-card span.title {
+   font-size: 18px;
+   font-weight: 600;
+   color: #a044ff;
+}
+
+section.prices .plan-card h5 {
+   font-size: 48px;
+   color: #a9a9ab;
+   padding: 35px 0px;
+}
+
+section.prices .plan-card h5 span {
+   font-size: 15px;
+   vertical-align: bottom;
+}
+
+section.prices .plan-card ul {
+   padding-right: 0;
+   list-style: none;
+}
+
+section.prices .plan-card ul li {
+   margin-bottom: 35px;
+   color: #acacac;
+}
+
+section.prices .plan-card a.btn {
+   background-color: transparent;
+   border: 2px solid #a044ff;
+   border-radius: 0;
+   color: #a044ff;
+   font-size: 15px;
+   font-weight: bold;
+   padding: 5px 15px;
+   width: 50%;
+   transition: 0.4s;
+   position: absolute;
+   bottom: 10px;
+   transform: translateX(50%);
+}
+
+section.prices .plan-card a.btn:hover {
+   background-color: #a044ff;
+   color: #fff;
+}
+
+section.faq {
+   background-color: #fff;
+   padding: 55px 0;
+}
+
+section.faq .faq-title h2 {
+   font-size: 30px;
+   font-weight: bold;
+   margin-bottom: 52px;
+   color: #555555;
+}
+
+section.faq .faq-q .accordion-button {
+   color: #555555;
+   font-size: 18px;
+   font-weight: 600;
+}
+
+section.faq .faq-q .accordion-button:not(.collapsed) {
+   background-color: #fff;
+   box-shadow: none;
+}
+
+section.faq .faq-q .accordion-button:focus {
+   border-color: #e1e1e1;
+   box-shadow: none;
+}
+
+section.faq .faq-q .accordion-body .accord {
+   color: #c9c9c9;
+   font-size: 15px;
+   line-height: 20px;
+}
+
+section.faq .faq-q .accordion-item {
+   margin-bottom: 15px;
+   border: 1px solid #e1e1e1;
+}
+
+section.video {
+   min-height: 100vh;
+   position: relative;
+   overflow: hidden;
+}
+
+section.video video {
+   min-height: 100%;
+   min-width: 100%;
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+section.video .overlay {
+   min-width: 100%;
+   min-height: 100%;
+   background-color: rgba(157, 87, 229, 0.9);
+   position: absolute;
+   inset: 0;
+}
+
+section.video button {
+   position: absolute;
+   right: 50%;
+   top: 32%;
+   background-color: transparent;
+   font-size: 30px;
+   color: #fff;
+   border: 0px;
+   transform: translate(50%);
+}
+
+section.video button .fa-video {
+   display: block;
+   border: 2px solid #fff;
+   width: 90px;
+   height: 90px;
+   line-height: 90px;
+   margin: 0 auto 45px;
+}
+
+section.contact {
+   background-color: #131313;
+   padding: 60px 0;
+}
+
+section.contact h4 {
+   font-size: 18px;
+   line-height: 48px;
+   color: #758594;
+}
+
+section.contact .form-control {
+   background-color: #242424;
+   border: 0;
+   border-radius: 0;
+   margin-bottom: 5px;
+   color: #c9c9c9;
+}
+
+section.contact input[type="text"] {
+   height: 50px;
+}
+section.contact input[type="email"] {
+   direction: rtl;
+   height: 50px;
+}
+section.contact textarea {
+   height: 110px;
+}
+section.contact form input,
+section.contact form textarea {
+   width: 90%;
+}
+section.contact button {
+   padding: 6px 20px;
+   background-color: #a044ff;
+   color: #fff;
+   font-size: 18px;
+   border: 0;
+   margin-top: 7px;
+   transition: 0.4s;
+}
+
+section.contact button:hover {
+   background-color: #6a3093;
+}
+
+section.contact .d-flex {
+   margin-bottom: 25px;
+}
+
+section.contact .d-flex h4 {
+   font-size: 18px;
+   line-height: 17px;
+   color: #aeadad;
+}
+
+section.contact .d-flex p {
+   font-size: 15px;
+   line-height: 20px;
+   color: #737373;
+   margin-top: 18px;
+}
+
+section.contact .invalid-feedback {
+   margin-top: -8px;
+   margin-bottom: 5px;
+}
+
+footer {
+   background-color: #1d1d1d;
+   padding: 22px 0;
+}
+
+footer .list-inline {
+   list-style-type: none;
+   margin-bottom: 0;
+}
+
+footer .list-inline .list-inline-item a {
+   background-color: #758594;
+   color: #1d1d1d;
+   display: block;
+   width: 40px;
+   height: 40px;
+   text-align: center;
+   line-height: 40px;
+   border-radius: 50%;
+   align-items: center;
+   font-size: 20px;
+   transition: 0.4s all ease;
+}
+
+footer .list-inline .list-inline-item a:hover {
+   background-color: #2e76c2;
+}
+
+footer .copyRight p {
+   font-size: 16px;
+   color: #919191;
+   text-align: left;
+   padding-bottom: 0 !important;
+}
+
+@media (max-width: 992px) {
+   header .header-text {
+      padding-top: 115px;
+   }
+   header .header-btns {
+      margin-bottom: 70px;
+   }
+}
+
+@media (max-width: 768px) {
+   header .product .product-image img {
+      margin-top: 50px;
+   }
+
+   header .product .product-label img {
+      position: absolute;
+      top: -10px;
+      right: -50px;
+   }
+
+   header .product .product-label p {
+      top: 5px;
+      right: 2px;
+   }
+
+   section.features .media-features .d-flex {
+      flex-flow: column;
+   }
+
+   section.features .media-features .d-flex h4 {
+      margin-top: 40px;
+      border: none !important;
+      text-align: center;
+   }
+
+   section.contact h4 {
+      margin-top: 25px;
+   }
+}
+
+@media (max-width: 576px) {
+   footer .copyRight p {
+      text-align: center;
+      margin-top: 10px;
+   }
+   .list-inline {
+      text-align: center;
+   }
+}
